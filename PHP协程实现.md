@@ -33,7 +33,7 @@ while(1) {
 
 当客户端连接关闭时，子进程退出并销毁所有资源，主进程会回收掉此子进程。
 
-## IMAGE
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/a1.png)
 
 这种模式最大的问题是，进程创建和销毁的开销很大。所以上面的模式没办法应用于非常繁忙的服务器程序。对应的改进版解决了此问题，这就是经典的 Leader-Follower 模型。
 ```php
@@ -554,7 +554,8 @@ current 方法是迭代器 Iterator 接口必要的方法，foreach 语句每一
 >协程的调度是由协程自身主动让出控制权到外层调度器实现的  
 回到刚才生成器实现 xrange 函数的例子，整个执行过程的交替可以用下图来表示：
 
-## IMAGE
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/a2.png)
+
 协程可以理解为纯用户态的线程，通过协作而不是抢占来进行任务切换。相对于进程或者线程，协程所有的操作都可以在用户态而非操作系统内核态完成，创建和切换的消耗非常低。
 
 简单的说 Coroutine（协程） 就是提供一种方法来中断当前任务的执行，保存当前的局部变量，下次再过来又可以恢复当前局部变量继续执行。
@@ -573,7 +574,7 @@ PHP 从 5.5 开始支持生成器及 yield 关键字，而 PHP 协程则由 yiel
 
 堆栈式调用 和 协程调用的对比：
 
-## IMAGE
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/a3.png)
 
 结合之前的例子，可以总结一下 yield 能做的就是：
 
@@ -869,7 +870,7 @@ class Scheduler
 
 也就是说任务交替执行的过程中，一旦遇到需要 IO 的部分，调度器就会把 CPU 时间分配给不需要 IO 的任务，等到当前任务遇到 IO 或者之前的任务 IO 结束才再次调度 CPU 时间，以此实现 CPU 和 IO 并行来提升执行效率，类似下图：
 
-## IMAGE
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/a4.png)
 
 #### 单任务改造
 
@@ -880,11 +881,11 @@ class Scheduler
 
 **多进程改造**
 
-## IMAGE
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/a5.png)
 
 **协程改造**
 
-## IMAGE
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/a6.png)
 
 ### 协程（Coroutines）和 Go 协程（Goroutines）
 
@@ -905,5 +906,6 @@ Go 协程比普通协程更强大，也很容易从协程的逻辑复用到 Go �
 * [Cooperative multitasking using coroutines (in PHP!)](http://nikic.github.io/2012/12/22/Cooperative-multitasking-using-coroutines-in-PHP.html)
 * [在PHP中使用协程实现多任务调度](http://www.laruence.com/2015/05/28/3038.html)
 * [PHP 并发 IO 编程之路](http://rango.swoole.com/archives/508)
+
 
 链接：http://www.jianshu.com/p/edef1cb7fee6
