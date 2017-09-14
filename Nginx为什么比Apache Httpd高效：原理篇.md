@@ -180,7 +180,8 @@ I/O复用（select和poll）
 
 答案是，他们无轮询。因为他们用callback取代了。想想看，当套接字比较多的时候，每次select()都要通过遍历FD_SETSIZE个Socket来完成调度，不管哪个Socket是活跃的，都遍历一遍。这会浪费很多CPU时间。如果能给套接字注册某个回调函数，当他们活跃时，自动完成相关操作，那就避免了轮询，这正是epoll、kqueue、/dev/poll做的。这样子说可能不好理解，那么我说一个现实中的例子，假设你在大学读书，住的宿舍楼有很多间房间，你的朋友要来找你。select版宿管大妈就会带着你的朋友挨个房间去找，直到找到你为止。而epoll版宿管大妈会先记下每位同学的房间号，你的朋友来时，只需告诉你的朋友你住在哪个房间即可，不用亲自带着你的朋友满大楼找人。如果来了10000个人，都要找自己住这栋楼的同学时，select版和epoll版宿管大妈，谁的效率更高，不言自明。同理，在高并发服务器中，轮询I/O是最耗时间的操作之一，select、epoll、/dev/poll的性能谁的性能更高，同样十分明了。
 
-**3.3.3 Windows or *nix （IOCP or kqueue、epoll、/dev/poll）？**
+#### 3.3.3 Windows or *nix （IOCP or kqueue、epoll、/dev/poll）？
+
 诚然，Windows的IOCP非常出色，目前很少有支持asynchronous I/O的系统，但是由于其系统本身的局限性，大型服务器还是在UNIX下。而且正如上面所述，kqueue、epoll、/dev/poll 与 IOCP相比，就是多了一层从内核copy数据到应用层的阻塞，从而不能算作asynchronous I/O类。但是，这层小小的阻塞无足轻重，kqueue、epoll、/dev/poll 已经做得很优秀了。
 
 **3.3.4 总结一些重点**
