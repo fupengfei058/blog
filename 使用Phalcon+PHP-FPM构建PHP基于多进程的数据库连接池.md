@@ -4,7 +4,7 @@
 
 下图就是PHP官方网站，对于PHP持久化数据库连接问题的一些阐述。
 
-![github](https://github.com/fupengfei058/article-collection/doc/e1.jpg)
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/e1.png)
 
 这里需要特别注意的一个问题是，由于脚本语言的特殊性，PHP官方并不建议在锁表或者事务操作的时候，使用PHP的持久化数据库连接。如图一所示，害怕数据库锁死
 
@@ -12,7 +12,7 @@
 
 下图中所示的，就是PHP-FPM的配置文件。关于配置文件，PHPer都看得懂，我就不多说了。主要说说PHP-FPM带来的PHP数据库连接池的特色：
 
-![github](https://github.com/fupengfei058/article-collection/doc/e2.jpg)
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/e2.png)
 
 1. PHP-FPM一个进程对应一个持久化的数据库连接；
 
@@ -24,7 +24,7 @@
 
 ### 第三：PHP实现数据库连接池的条件
 
-![github](https://github.com/fupengfei058/article-collection/doc/e3.jpg)
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/e3.png)
 
 如上图中所示，只有在new Pdo（）时使用了Pdo::PERSISTENT=ture属性构造数据库连接时，这个连接才会成为持久化的数据库连接。但是问题来了，new Pdo（）时，绑定了数据库的地址、库名和用户名。也就是说，同一数据库的同一用户产生的数据库连接，才会复用这个数据库持久连接。
 
@@ -34,7 +34,7 @@
 
 虽然Phalcon官方文档并没有提及PDO的数据库连接池，但是翻看Phalcon的PDO类的源代码，就会发现Phalcon实际上是支持PDO的数据库连接池。如下图所示：
 
-![github](https://github.com/fupengfei058/article-collection/doc/e4.jpg)
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/e4.png)
 
 不仅仅支持PHP的数据库连接池，而且他用C语言写的ORM，性能要比所有的PHP语言写的ORM要强很多。也就是说Phalcon的ORM及与PHP-FPM实现的数据库连接池，就是目前PHP所有框架中数据库连接池性能最强的。
 
@@ -44,7 +44,7 @@ yaf框架虽然路由性能比phalcon略好，但是由于没有ORM，在拉取P
 
 Phalcon实现持久连接的方式很简单，如下图所示，配置文件里在注册服务时添加一个PDO的参数即可。所有通过这个请求的数据库连接，都将成为持久化的连接。
 
-![github](https://github.com/fupengfei058/article-collection/doc/e5.jpg)
+![github](https://github.com/fupengfei058/article-collection/blob/master/doc/e5.png)
 
 但是由于，PHP数据库连接池的特殊性。最好通过注册不同的数据库连接服务，来区分不同的数据库连接。甚至针对高查询量的请求，创建带有专用数据库连接池的微服务，来实现与其他不需要数据库连接池业务的区分。
 
