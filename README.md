@@ -11,3 +11,4 @@
 * [使用Phalcon+PHP-FPM构建PHP基于多进程的数据库连接池](https://github.com/fupengfei058/article-collection/blob/master/%E4%BD%BF%E7%94%A8Phalcon+PHP-FPM%E6%9E%84%E5%BB%BAPHP%E5%9F%BA%E4%BA%8E%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0.md)
 * [PHP正则中的捕获组与非捕获组](https://github.com/fupengfei058/article-collection/blob/master/PHP%E6%AD%A3%E5%88%99%E4%B8%AD%E7%9A%84%E6%8D%95%E8%8E%B7%E7%BB%84%E4%B8%8E%E9%9D%9E%E6%8D%95%E8%8E%B7%E7%BB%84.md)
 * [Linux进程调度](https://github.com/fupengfei058/article-collection/blob/master/Linux%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6.md)
+* [shell笔记](https://github.com/fupengfei058/article-collection/blob/master/shell%E7%AC%94%E8%AE%B0.md)
