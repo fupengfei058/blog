@@ -32,7 +32,7 @@ break
    ```
 5. 晚上11点到早上8点之间每两个小时查看一次系统日期与时间，写出具体配置命令
 ```
-   echo1 23,1-8/2 * * * root /tmp/walldate.sh >> /etc/crontab
+   echo 1 23,1-8/2 * * * root /tmp/walldate.sh >> /etc/crontab
    ```
 6. 编写个shell脚本将当前目录下大于10K的文件转移到/tmp目录下
 ```
@@ -52,7 +52,7 @@ break
    ```
 8. 在11月份内，每天的早上6点到12点中，每隔2小时执行一次/usr/bin/httpd.sh 怎么实现
 ```
-   echo"1 6-12/2 * * * root /usr/bin/httpd.sh >> /etc/crontab"
+   echo 1 6-12/2 * * * root /usr/bin/httpd.sh >> /etc/crontab
    ```
 9. 在shell环境如何杀死一个进程？
 ```
