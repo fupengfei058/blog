@@ -103,8 +103,10 @@ break
   /sbin/iptables -P input -j DROP
   ```
 16. 在shell中变量的赋值有四种方法，其中，采用name=12的方法称（   A  ）。
+
 A直接赋值                    B使用read命令
 C使用命令行参数            D使用命令的输出
+
 17. 有文件file1
 1)查询file1里面空行的所在行号
 ```
