@@ -52,3 +52,6 @@ Github团队想到的新算法，是建立一个Bitmap索引，即为每一个co
 这样一来，"清点对象"就变成了二进制值的比较运算，因此速度极快。进一步的介绍，请参看官方文档[《Bitmap的解释》](https://github.com/gitster/git/commit/fff4275)，[《Bitmap的格式》](https://github.com/gitster/git/blob/master/Documentation/technical/bitmap-format.txt)。
 
 目前，Github的生产环境已经部署了这套算法，用户再也不用为了清点对象，而苦苦等待了。而且，Github团队还把它合并进了Git，这意味着，从此所有Git实现都可以使用Bitmap功能了，因此将来肯定还会有更多好玩的用法出现。
+
+链接：
+http://www.ruanyifeng.com/blog/2015/09/git-bitmap.html
