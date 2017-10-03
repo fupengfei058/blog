@@ -14,7 +14,7 @@ Receiving objects:   4% (191786/4350078), 78.19 MiB | 8.70 MiB/s
 
 后来，他们终于发现了一种新的算法，现在清点一次只要3毫秒！
 
-[!github](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015093001.png)
+![github](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015093001.png)
 
 为了理解这个算法，你必须先知道，什么是Git的对象。简单说，对象就是文件，最重要的对象有三种。
 
@@ -26,7 +26,7 @@ Receiving objects:   4% (191786/4350078), 78.19 MiB | 8.70 MiB/s
 
 所以，"清点对象"就是清点各种commit、目录、文件等。git clone和git fetch操作都需要清点对象，因为需要知道，到底下载哪些对象文件。
 
-[!github](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015093002.png)
+![github](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015093002.png)
 
 清点对象的原始算法如下。
 
@@ -43,7 +43,7 @@ Github团队想到的新算法，是建立一个Bitmap索引，即为每一个co
 
 打开本地Github仓库的.git/objects/pack/目录，你会看到一个索引文件和一个数据文件，它们就是Bitmap。简单说，这两个文件索引了当前代码库的所有对象，然后使用一个二进制值代表这些对象。有多少个对象，这个二进制值就有多少位。它的第n位，就代表数据文件里面的第n个对象。
 
-[!github](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015093003.png)
+![github](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015093003.png)
 
 每个commit都会有一个对应的二进制值，表示当前快照包含的所有对象。这些对象对应的二进制位都为1，其他二进制位都为0。
 
