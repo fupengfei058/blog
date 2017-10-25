@@ -371,3 +371,6 @@ CREATE TABLE IF NOT EXISTS `ih_store` (
 INSERT INTO `ih_store` (`id`, `goods_id`, `sku_id`, `number`, `freez`) VALUES  
 (1, 1, 11, 500, 0);
 ```
+
+链接：
+http://blog.csdn.net/erjian666/article/details/58585181
