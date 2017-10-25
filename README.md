@@ -12,3 +12,6 @@
 * [PHP正则中的捕获组与非捕获组](https://github.com/fupengfei058/article-collection/blob/master/PHP%E6%AD%A3%E5%88%99%E4%B8%AD%E7%9A%84%E6%8D%95%E8%8E%B7%E7%BB%84%E4%B8%8E%E9%9D%9E%E6%8D%95%E8%8E%B7%E7%BB%84.md)
 * [Linux进程调度](https://github.com/fupengfei058/article-collection/blob/master/Linux%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6.md)
 * [shell笔记](https://github.com/fupengfei058/article-collection/blob/master/shell%E7%AC%94%E8%AE%B0.md)
+* [用memoization优化递归算法](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
+* [Github的清点对象算法](https://github.com/fupengfei058/article-collection/blob/master/Github%E7%9A%84%E6%B8%85%E7%82%B9%E5%AF%B9%E8%B1%A1%E7%AE%97%E6%B3%95.md)
+* [C++ STL入门](https://github.com/fupengfei058/article-collection/blob/master/C%2B%2B%20STL%E5%85%A5%E9%97%A8.md)
