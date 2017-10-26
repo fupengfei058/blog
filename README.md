@@ -15,3 +15,4 @@
 * [用memoization优化递归算法](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
 * [Github的清点对象算法](https://github.com/fupengfei058/article-collection/blob/master/Github%E7%9A%84%E6%B8%85%E7%82%B9%E5%AF%B9%E8%B1%A1%E7%AE%97%E6%B3%95.md)
 * [C++ STL入门](https://github.com/fupengfei058/article-collection/blob/master/C%2B%2B%20STL%E5%85%A5%E9%97%A8.md)
+* [php结合redis实现高并发下的抢购、秒杀功能](https://github.com/fupengfei058/article-collection/blob/master/php%E7%BB%93%E5%90%88redis%E5%AE%9E%E7%8E%B0%E9%AB%98%E5%B9%B6%E5%8F%91%E4%B8%8B%E7%9A%84%E6%8A%A2%E8%B4%AD%E3%80%81%E7%A7%92%E6%9D%80%E5%8A%9F%E8%83%BD.md)
