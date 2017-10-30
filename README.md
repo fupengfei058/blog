@@ -19,3 +19,4 @@
 * [AVL树](https://github.com/fupengfei058/article-collection/blob/master/AVL%E6%A0%91.md)
 * [知识点整理——操作系统](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
 * [知识点整理——计算机网络](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
+* [使用fscok实现异步调用PHP](https://github.com/fupengfei058/article-collection/blob/master/%E4%BD%BF%E7%94%A8fscok%E5%AE%9E%E7%8E%B0%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8PHP.md)
