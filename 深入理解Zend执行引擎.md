@@ -176,8 +176,8 @@ line     #* I O op                           fetch          ext  return  operand
          3      ECHO                                                     ~2
    5     4    > RETURN                                                   1
 ```
+
 ![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g3.png)
-![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g4.png)
 
 相信大家可以理解上面输出的OPCode，我在此简单说明下：
 
