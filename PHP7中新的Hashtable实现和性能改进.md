@@ -277,3 +277,5 @@ PHP 7.0 | 3.00 MiB | 4.00 MiB
 我想说的最后一点是，PHP 7不仅仅只是改进了Hashtable的内部实现，而且还改变了跟它们相关的API。我之前了解过一些简单的操作是怎么被使用的，像zend_hash_find这种操作，特别是它们需要间接调用多少次（提示：3次）（这个地方不是很清楚，估计他想说的是要得到一个结果需要调用多个函数，而实际上一个函数就可以搞定的）。在PHP7中，你只需要写zend_hash_find(ht, key)，就可以得到一个zval的指针（zval*）。所以我发现在PHP 7中编写扩展也变得更舒坦了。
 
 希望我的这篇文章能够为PHP 7中的Hashtable的内部机制提供一些有价值的观点。也许我会再写一篇介绍zval的文章。这篇文章已经涵盖了部分相关内容，不过关于这个话题还有很多可探讨的东西。
+
+链接：http://gywbd.github.io/posts/2014/12/php7-new-hashtable-implementation.html
