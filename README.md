@@ -23,3 +23,5 @@
 * [深入理解PHP内核：Thinking In PHP Internals](https://github.com/fupengfei058/article-collection/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3PHP%E5%86%85%E6%A0%B8%EF%BC%9AThinking%20In%20PHP%20Internals.md)
 * [PHP7中新的Hashtable实现和性能改进](https://github.com/fupengfei058/article-collection/blob/master/PHP7%E4%B8%AD%E6%96%B0%E7%9A%84Hashtable%E5%AE%9E%E7%8E%B0%E5%92%8C%E6%80%A7%E8%83%BD%E6%94%B9%E8%BF%9B.md)
 * [深入理解Zend执行引擎](https://github.com/fupengfei058/article-collection/blob/master/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Zend%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.md)
+* [浮点数](https://github.com/fupengfei058/article-collection/blob/master/%E6%B5%AE%E7%82%B9%E6%95%B0.md)
+* [段错误——关于计算机内存布局](https://github.com/fupengfei058/article-collection/blob/master/%E6%AE%B5%E9%94%99%E8%AF%AF%E2%80%94%E2%80%94%E5%85%B3%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.md)
