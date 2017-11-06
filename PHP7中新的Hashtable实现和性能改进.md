@@ -36,13 +36,13 @@ Hashtable的概念实际上非常简单：字符串的键先会被传递给一�
 #### 老的Hashtable的实现方式
 在此我只会大概介绍一下老的hashtable的实现方式，如果你想要更进一步的了解，可以参见[PHP内部机制这本书的hashtable](http://www.phpinternalsbook.com/hashtables/basic_structure.html)这一章。下面这张图高度概括了PHP5中的hanshtable：
 
-![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g1.jpg)
+![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g1.png)
 
 “冲突处理（collision resolution）”链表中的元素被称为”buckets”。每一个bucket都是单独分配的。这个图片没有展示的是每个元素实际的值也是保存在这些buckets中的（图片中只展示了键）。值会存放zval结构，这些结构是分开单独分配内存的，它们的大小是16字节（32位）或者24个字节（64位）。
 
 另外一点上面的图片没有展示出来的是，冲突处理链表实际上是一个双向链表（方便元素的删除）。在冲突处理链表的旁边有另外一个双向链表，它用于保存数组中元素的顺序。对于一个包含的键为”a”,”b”,”c”（而且这是它们的插入顺序）的数组，这个链表会是下面这个样子：
 
-![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g2.jpg)
+![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g2.png)
 
 所以为什么老的hashtable的结构比较低效，这里的低效从内存占用和性能上而言的？有以下原因：
 
