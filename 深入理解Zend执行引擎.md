@@ -59,6 +59,7 @@ ByteCode和OPCode其实是两个含义不同的词，但我们经常会把它们
 * ZEND_EXIT ：退出PHP执行
 * ZEND_FETCH_DIM_W : 取一个操作数在某个维度（dimension）下的值，然后执行写入操作（译注：这里的“维度”指的一维数组，二维数组的“维度”，给数组中的某个元素赋值，或者是给字符串所在某个位置的字符赋值都会用到这个OPCode）
 * 等等
+
 PHP5.6有167个OPCode。因此我们可以说PHP5.6的虚拟机的executor可以执行167种不同的（计算）操作。
 
 PHP内部使用zend_op这个结构体来表示OPCode：
