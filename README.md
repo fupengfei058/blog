@@ -29,3 +29,5 @@
 * [从数据结构角度分析foreach效率比for循环高的原因](https://github.com/fupengfei058/article-collection/blob/master/%E4%BB%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%A7%92%E5%BA%A6%E5%88%86%E6%9E%90foreach%E6%95%88%E7%8E%87%E6%AF%94for%E5%BE%AA%E7%8E%AF%E9%AB%98%E7%9A%84%E5%8E%9F%E5%9B%A0.md)
 * [TIME_WAIT状态存在的原因](https://github.com/fupengfei058/article-collection/blob/master/TIME_WAIT%E7%8A%B6%E6%80%81%E5%AD%98%E5%9C%A8%E7%9A%84%E5%8E%9F%E5%9B%A0.md)
 * [PHP7和PHP5的对比](https://github.com/fupengfei058/article-collection/blob/master/PHP7%E5%92%8CPHP5%E7%9A%84%E5%AF%B9%E6%AF%94.md)
+* [信息指纹](https://github.com/fupengfei058/article-collection/blob/master/%E4%BF%A1%E6%81%AF%E6%8C%87%E7%BA%B9.md)
+* [从哈希到布隆过滤器](https://github.com/fupengfei058/article-collection/blob/master/%E4%BB%8E%E5%93%88%E5%B8%8C%E5%88%B0%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8.md)
