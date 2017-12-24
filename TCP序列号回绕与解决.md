@@ -21,7 +21,7 @@ return (__s32)(seq1-seq2) < 0;
 
 为了方便说明，我们以unsigned char和char为例来说明：
 
-假设seq1=255， seq2=1（发生了回绕）。
+假设seq1=255，seq2=1（发生了回绕）。
 
 seq1 = 1111 1111 seq2 = 0000 0001
 
