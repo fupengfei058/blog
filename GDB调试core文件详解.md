@@ -147,6 +147,8 @@ b) 随意使用指针转换。一个指向一段内存的指针，除非确定�
 
 * 我们进入对应的core文件生成目录，优先确认是否core文件格式并启用gdb进行调试。
 
+(**调试PHP使用gdb php -c core.31656**)
+
 ![github](http://img.my.csdn.net/uploads/201211/07/1352287964_7192.jpg)
 
 从红色方框截图可以看到，程序中止是因为信号11，且从bt(backtrace)命令（或者where）可以看到函数的调用栈，即程序执行到coremain.cpp的第5行，且里面调用scanf 函数，而该函数其实内部会调用_IO_vfscanf_internal()函数。
