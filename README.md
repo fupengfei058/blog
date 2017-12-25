@@ -32,3 +32,4 @@
 * [信息指纹](https://github.com/fupengfei058/article-collection/blob/master/%E4%BF%A1%E6%81%AF%E6%8C%87%E7%BA%B9.md)
 * [从哈希到布隆过滤器](https://github.com/fupengfei058/article-collection/blob/master/%E4%BB%8E%E5%93%88%E5%B8%8C%E5%88%B0%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8.md)
 * [TCP序列号回绕与解决](https://github.com/fupengfei058/article-collection/blob/master/TCP%E5%BA%8F%E5%88%97%E5%8F%B7%E5%9B%9E%E7%BB%95%E4%B8%8E%E8%A7%A3%E5%86%B3.md)
+* [用Strace诊断服务器问题](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8Strace%E8%AF%8A%E6%96%AD%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98.md)
