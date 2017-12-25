@@ -34,3 +34,4 @@
 * [TCP序列号回绕与解决](https://github.com/fupengfei058/article-collection/blob/master/TCP%E5%BA%8F%E5%88%97%E5%8F%B7%E5%9B%9E%E7%BB%95%E4%B8%8E%E8%A7%A3%E5%86%B3.md)
 * [用Strace诊断服务器问题](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8Strace%E8%AF%8A%E6%96%AD%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98.md)
 * [GDB调试core文件详解](https://github.com/fupengfei058/article-collection/blob/master/GDB%E8%B0%83%E8%AF%95core%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.md)
+* [PHP生命周期](https://github.com/fupengfei058/article-collection/blob/master/PHP%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
