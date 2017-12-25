@@ -41,10 +41,14 @@ echo “/data/coredump/core.%e.%p” >/proc/sys/kernel/core_pattern
 ### 三，如何判断一个文件是coredump文件？
 
 在类unix系统下，coredump文件本身主要的格式也是ELF格式，因此，我们可以通过readelf命令进行判断。
+
 ![github](http://img.my.csdn.net/uploads/201211/07/1352287700_6534.jpg)
+
 可以看到ELF文件头的Type字段的类型是：CORE (Core file)
 
-可以通过简单的file命令进行快速判断：     
+可以通过简单的file命令进行快速判断：
+
+![github](http://img.my.csdn.net/uploads/201211/07/1352287746_8191.jpg)
 
 ### 四，产生coredum的一些条件总结
 
