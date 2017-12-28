@@ -10,6 +10,8 @@
 * [从数据结构角度分析foreach效率比for循环高的原因](https://github.com/fupengfei058/article-collection/blob/master/%E4%BB%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%A7%92%E5%BA%A6%E5%88%86%E6%9E%90foreach%E6%95%88%E7%8E%87%E6%AF%94for%E5%BE%AA%E7%8E%AF%E9%AB%98%E7%9A%84%E5%8E%9F%E5%9B%A0.md)
 * [PHP7和PHP5的对比](https://github.com/fupengfei058/article-collection/blob/master/PHP7%E5%92%8CPHP5%E7%9A%84%E5%AF%B9%E6%AF%94.md)
 * [PHP生命周期](https://github.com/fupengfei058/article-collection/blob/master/PHP%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
+* [PHP新的垃圾回收机制:Zend GC详解（PHP5.3）](https://github.com/fupengfei058/article-collection/blob/master/PHP%E6%96%B0%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6:Zend%20GC%E8%AF%A6%E8%A7%A3.md)
+* [详谈PHP垃圾回收机制（PHP7）](https://github.com/fupengfei058/article-collection/blob/master/%E8%AF%A6%E8%B0%88PHP%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
 * [shell笔记](https://github.com/fupengfei058/article-collection/blob/master/shell%E7%AC%94%E8%AE%B0.md)
 * [C++ STL入门](https://github.com/fupengfei058/article-collection/blob/master/C%2B%2B%20STL%E5%85%A5%E9%97%A8.md)
 
