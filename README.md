@@ -35,3 +35,5 @@
 * [用Strace诊断服务器问题](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8Strace%E8%AF%8A%E6%96%AD%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98.md)
 * [GDB调试core文件详解](https://github.com/fupengfei058/article-collection/blob/master/GDB%E8%B0%83%E8%AF%95core%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.md)
 * [PHP生命周期](https://github.com/fupengfei058/article-collection/blob/master/PHP%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
+* [分布式系统事务一致性解决方案](https://github.com/fupengfei058/article-collection/blob/master/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%BA%8B%E5%8A%A1%E4%B8%80%E8%87%B4%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
+* [分库分表的几种常见形式以及可能遇到的难](https://github.com/fupengfei058/article-collection/blob/master/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%BD%A2%E5%BC%8F%E4%BB%A5%E5%8F%8A%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE.md)
