@@ -14,7 +14,7 @@
 * [详谈PHP垃圾回收机制（PHP7）](https://github.com/fupengfei058/article-collection/blob/master/%E8%AF%A6%E8%B0%88PHP%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6.md)
 * [shell笔记](https://github.com/fupengfei058/article-collection/blob/master/shell%E7%AC%94%E8%AE%B0.md)
 * [C++ STL入门](https://github.com/fupengfei058/article-collection/blob/master/C%2B%2B%20STL%E5%85%A5%E9%97%A8.md)
-* [swoole2.0协程分析](https://github.com/fupengfei058/article-collection/blob/master/swoole2.0%E5%8D%8F%E7%A8%8B%E5%88%86%E6%9E%90)
+* [swoole2.0协程原理分析](https://github.com/fupengfei058/article-collection/blob/master/swoole2.0%E5%8D%8F%E7%A8%8B%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.md)
 
 ### 算法&网络
 * [用memoization优化递归算法](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
