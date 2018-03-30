@@ -4,7 +4,7 @@
 要理解是什么是“用户态的线程”，必然就要先理解什么是“内核态的线程”。 内核态的线程是由操作系统来进行调度的，在切换线程上下文时，要先保存上一个线程的上下文，然后执行下一个线程，当条件满足时，切换回上一个线程，并恢复上下文。 协程也是如此，只不过，用户态的线程不是由操作系统来调度的，而是由程序员来调度的，是在用户态的。
 
 ### Swoole协程概述
-Swoole的协程实现实际上是基于PHP的Yield机制的。通过Yield可以保存一个PHP function的现场。再结合Swoole提供的EventLoop，在IO发起时存储function现场，IO完成时恢复function现场。底层实现了一个调度器完成php function stack的管理。主要用与高并发IO的场景，同时并发执行大量IO操作，目前支持 Redis，MySQL，TCP/UDP Client，HttpClient 4种IO操作。
+Swoole的协程实现实际上是基于PHP的Yield机制的。通过Yield可以保存一个PHP function的现场。再结合Swoole提供的EventLoop，在IO发起时存储function现场，IO完成时恢复function现场。底层实现了一个调度器完成php function stack的管理。主要用于高并发IO的场景，同时并发执行大量IO操作，目前支持 Redis，MySQL，TCP/UDP Client，HttpClient 4种IO操作。
 
 ### Swoole源码分析
 swoole_coroutine.c的头部定义了一个全局变量COROG，它的结构为：
@@ -183,12 +183,13 @@ $client->send("hello world\n");
 echo $client->recv();
 $client->close();
 ```
-我们分析一下它的行为。
-源码在swoole_client_coro.c，首先$client = new Swoole\Coroutine\Client(SWOOLE_SOCK_TCP)实例化对象的时候触发一个构造函数，在这里进行协程栈的初始化：
+我们分析一下它的行为，源码在swoole_client_coro.c。
+
+首先$client = new Swoole\Coroutine\Client(SWOOLE_SOCK_TCP)实例化对象的时候触发一个构造函数，在这里进行协程栈的初始化：
 ```c
 static PHP_METHOD(swoole_client_coro, __construct)
 {
-	...
+    ...
     //不支持长连
     int client_type = php_swoole_socktype(type);
     if (client_type < SW_SOCK_TCP || client_type > SW_SOCK_UNIX_STREAM)
@@ -238,3 +239,62 @@ static PHP_METHOD(swoole_client_coro, connect)
     coro_yield();
 }
 ```
+client向server发送数据$client->send("hello world\n")：
+```c
+static PHP_METHOD(swoole_client_coro, send)
+{
+    ...
+    swClient *cli = client_coro_get_ptr(getThis());
+    ...
+    int ret = cli->send(cli, data, data_len, flags);
+    if (ret < 0)
+    {
+        ...
+    }
+    ...
+}
+```
+客户端接收数据$client->recv()，recv也是常见的阻塞IO，因此这里同样会保存当前协程的上下文，然后进行yield。待server回复后，触发epoll事件，然后resume。这里有一个超时机制，在设定时间内未能回包则返回false。
+```c
+static PHP_METHOD(swoole_client_coro, recv)
+{
+    ...
+    swoole_client_coro_property *ccp = swoole_get_property(getThis(), 1);
+    if (ccp->iowait == SW_CLIENT_CORO_STATUS_DONE)
+    {
+        ...
+    }
+    else if (ccp->iowait == SW_CLIENT_CORO_STATUS_WAIT && ccp->cid != COROG.current_coro->cid)
+    {
+        ...
+    }
+
+    php_context *context = swoole_get_property(getThis(), 0);
+    if (timeout > 0)
+    {
+        php_swoole_check_timer((int) (timeout * 1000));
+        ccp->timer = SwooleG.timer.add(&SwooleG.timer, (int) (timeout * 1000), 0, context, client_coro_onTimeout);
+    }
+    ccp->iowait = SW_CLIENT_CORO_STATUS_WAIT;
+    coro_save(context);
+    ccp->cid = COROG.current_coro->cid;
+    coro_yield();
+}
+```
+$client->close()这一步的操作主要是释放连接、释放内存，把对应的swoole_object置为NULL
+```c
+static PHP_METHOD(swoole_client_coro, close)
+{
+    swClient *cli = swoole_get_object(getThis());
+    ...
+    //Connection error, or short tcp connection.
+    swoole_client_coro_property *ccp = swoole_get_property(getThis(), 1);
+    ccp->iowait = SW_CLIENT_CORO_STATUS_CLOSED;
+    cli->released = 1;
+    php_swoole_client_free(getThis(), cli TSRMLS_CC);
+
+    RETURN_TRUE;
+}
+```
+### 总结
+Swoole2.0实现了业务层无感知的底层协程调度，开发者可以用同步的代码编写方式达到异步IO的效果和性能，避免了传统异步回调所带来的离散的代码逻辑和陷入多层回调中导致代码无法维护，并且极大的提高了开发效率。
