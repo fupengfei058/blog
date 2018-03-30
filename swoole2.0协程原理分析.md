@@ -7,7 +7,7 @@
 Swoole的协程实现实际上是基于PHP的Yield机制的。通过Yield可以保存一个PHP function的现场。再结合Swoole提供的EventLoop，在IO发起时存储function现场，IO完成时恢复function现场。底层实现了一个调度器完成php function stack的管理。主要用与高并发IO的场景，同时并发执行大量IO操作，目前支持 Redis，MySQL，TCP/UDP Client，HttpClient 4种IO操作。
 
 ### Swoole源码分析
-swoole_coroutine.c中定义了一个全局变量COROG，它的结构为：
+swoole_coroutine.c的头部定义了一个全局变量COROG，它的结构为：
 ```c
 typedef struct _coro_global
 {
@@ -22,9 +22,9 @@ typedef struct _coro_global
 ...
 } coro_global;
 ```
-由此可见，该变量是用于存储协程的初始化信息。此外，swoole_coroutine.c的头部还定义了一个很重要的宏叫做SWCC，用于保存当前协程的详细信息，我们知道Swoole为每个协程都分配了空间，用于保存协程切换时的状态信息。进行协程切换时会自动保存Zend VM的内存状态（主要是EG全局内存和vm stack）。那么所谓的状态信息就是保存于SWCC这个宏当中，回调函数执行完后释放。
+该变量是用于存储协程的基本信息如开启的协程数量。此外，swoole_coroutine.c中还定义了一个很重要的宏叫做SWCC，用于保存当前协程的详细信息，我们知道Swoole为每个协程都分配了空间，用于保存协程切换时的状态信息。进行协程切换时会自动保存Zend VM的内存状态（主要是EG全局内存和vm stack）。那么所谓的状态信息就是保存于SWCC这个宏当中，回调函数执行完后释放。
 
-接下来我们介绍swoole协程中几个比较重要的动作
+接下来我们介绍swoole协程中几个比较重要的动作。
 
 #### 创建协程
 ```c
@@ -123,8 +123,8 @@ int sw_coro_resume(php_context *sw_current_context, zval *retval, zval *coro_ret
         ZVAL_COPY(SWCC(current_coro_return_value_ptr), retval);
     }
     EG(current_execute_data)->opline++;
-
     int coro_status;
+    
     //设置跳转点，方便在执行过程中再遇到异步IO操作，进行跳转。
     if (!setjmp(*swReactorCheckPoint))
     {
@@ -149,4 +149,92 @@ int sw_coro_resume(php_context *sw_current_context, zval *retval, zval *coro_ret
 }
 ```
 
-#### todo
+#### 协程关闭
+```c
+sw_inline void coro_close(TSRMLS_D)
+{
+    //释放内存空间，将COROG.coro_num减一
+    swTraceLog(SW_TRACE_COROUTINE, "Close coroutine id %d", COROG.current_coro->cid);
+    if (COROG.current_coro->function)
+    {
+        sw_zval_free(COROG.current_coro->function);
+        COROG.current_coro->function = NULL;
+    }
+    free_cidmap(COROG.current_coro->cid);
+    efree(EG(vm_stack));
+    efree(COROG.allocated_return_value_ptr);
+    EG(vm_stack) = COROG.origin_vm_stack;
+    EG(vm_stack_top) = COROG.origin_vm_stack_top;
+    EG(vm_stack_end) = COROG.origin_vm_stack_end;
+    --COROG.coro_num;
+    COROG.current_coro = NULL;
+    swTraceLog(SW_TRACE_COROUTINE, "closing coro and %d remained. usage size: %zu. malloc size: %zu", COROG.coro_num, zend_memory_usage(0), zend_memory_usage(1));
+}
+```
+### 实例分析
+这是从swoole文档找的一个协程客户端demo：
+```php
+$client = new Swoole\Coroutine\Client(SWOOLE_SOCK_TCP);
+if (!$client->connect('127.0.0.1', 9501, 0.5))
+{
+    exit("connect failed. Error: {$client->errCode}\n");
+}
+$client->send("hello world\n");
+echo $client->recv();
+$client->close();
+```
+我们分析一下它的行为。
+源码在swoole_client_coro.c，首先$client = new Swoole\Coroutine\Client(SWOOLE_SOCK_TCP)实例化对象的时候触发一个构造函数，在这里进行协程栈的初始化：
+```c
+static PHP_METHOD(swoole_client_coro, __construct)
+{
+	...
+    //不支持长连
+    int client_type = php_swoole_socktype(type);
+    if (client_type < SW_SOCK_TCP || client_type > SW_SOCK_UNIX_STREAM)
+    {
+        swoole_php_fatal_error(E_ERROR, "Unknown client type '%d'.", client_type);
+    }
+
+    zend_update_property_long(swoole_client_coro_class_entry_ptr, getThis(), ZEND_STRL("type"), type TSRMLS_CC);
+    //init
+    swoole_set_object(getThis(), NULL);
+    
+    //开辟内存空间
+    swoole_client_coro_property *client_coro_property = emalloc(sizeof(swoole_client_coro_property));
+    bzero(client_coro_property, sizeof(swoole_client_coro_property));
+    client_coro_property->iowait = SW_CLIENT_CORO_STATUS_CLOSED;
+    swoole_set_property(getThis(), client_coro_property_coroutine, client_coro_property);
+
+    php_context *sw_current_context = emalloc(sizeof(php_context));
+    sw_current_context->onTimeout = NULL;
+    ...
+    sw_current_context->coro_params = *getThis();
+    ...
+    RETURN_TRUE;
+}
+```
+当客户端发起一个连接请求$client->connect('127.0.0.1', 9501, 0.5)，swoole将保存PHP上下文信息，并让出cpu执行权，待确认连接成功后，触发epoll事件，然后协程切换，恢复PHP上下文信息，返回结果，继续执行PHP代码
+```c
+static PHP_METHOD(swoole_client_coro, connect)
+{
+    ...
+    swoole_set_object(getThis(), cli);
+    ...
+    zval *zobject = getThis();
+    cli->object = zobject;
+    ...
+    swoole_client_coro_property *ccp = swoole_get_property(getThis(), 1);
+    sw_copy_to_stack(cli->object, ccp->_object);
+    ...
+    //nonblock async
+    if (cli->connect(cli, host, port, timeout, sock_flag) < 0)
+    {
+        ...
+    }
+    ...
+    php_context *sw_current_context = swoole_get_property(getThis(), 0);
+    coro_save(sw_current_context);
+    coro_yield();
+}
+```
