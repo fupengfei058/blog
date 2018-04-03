@@ -297,6 +297,4 @@ static PHP_METHOD(swoole_client_coro, close)
 }
 ```
 ### 总结
-以上关于swoole协程原理的介绍均是在onReceive、onRequest等回调函数中使用协程客户端。但除此之外，swoole还支持用户代码自行创建协程，在不支持协程的回调函数中，可以调用Coroutine::create自行创建协程，swoole2.1以上版本还采用了借鉴Go语言的协程语法糖。
-
-Swoole底层对协程的封装实现业务层无感知的协程调度，开发者不需要使用yield关键词来标识一个协程IO操作，可以用同步的代码编写方式达到异步IO的效果和性能，避免了传统异步回调所带来的离散的代码逻辑和陷入多层回调中导致代码无法维护，极大的提高了开发效率。
+以上关于swoole协程的介绍默认是在onReceive、onRequest等回调函数中使用协程客户端。除此之外，swoole还支持用户代码自行创建协程，在不支持协程的回调函数中，可以调用Coroutine::create自行创建协程，swoole2.1以上版本还采用了借鉴Go语言的协程语法糖，其底层调度原理和协程客户端是一致的。
