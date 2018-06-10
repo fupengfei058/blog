@@ -16,6 +16,7 @@
 * [C++ STL入门](https://github.com/fupengfei058/article-collection/blob/master/C%2B%2B%20STL%E5%85%A5%E9%97%A8.md)
 * [swoole2.0协程原理分析](https://github.com/fupengfei058/article-collection/blob/master/swoole2.0%E5%8D%8F%E7%A8%8B%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.md)
 * [PHP的socket相关函数整理](https://github.com/fupengfei058/article-collection/blob/master/PHP%E7%9A%84socket%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86.md)
+* [C语言malloc函数原理](https://github.com/fupengfei058/article-collection/blob/master/C%E8%AF%AD%E8%A8%80malloc%E5%87%BD%E6%95%B0%E5%8E%9F%E7%90%86.md)
 
 ### 算法&网络
 * [用memoization优化递归算法](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
