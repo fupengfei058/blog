@@ -4,7 +4,7 @@
 要理解是什么是“用户态的线程”，必然就要先理解什么是“内核态的线程”。 内核态的线程是由操作系统来进行调度的，在切换线程上下文时，要先保存上一个线程的上下文，然后执行下一个线程，当条件满足时，切换回上一个线程，并恢复上下文。 协程也是如此，只不过，用户态的线程不是由操作系统来调度的，而是由程序员来调度的，是在用户态的。
 
 ### Swoole协程概述
-Swoole的协程实现实际上是基于PHP的Yield机制的。通过Yield可以保存一个PHP function的现场。再结合Swoole提供的EventLoop，在IO发起时存储function现场，IO完成时恢复function现场。底层实现了一个调度器完成php function stack的管理。主要用于高并发IO的场景，同时并发执行大量IO操作，目前支持 Redis，MySQL，TCP/UDP Client，HttpClient 4种IO操作。
+Swoole2.0基于setjmp、longjmp 实现，在进行协程切换时会自动保存Zend VM的内存状态（主要是EG全局内存和vm stack）。主要用于高并发IO的场景，同时并发执行大量IO操作，目前支持 Redis，MySQL，TCP/UDP Client，HttpClient 4种IO操作。
 
 ### Swoole源码分析
 swoole_coroutine.c的头部定义了一个全局变量COROG，它的结构为：
@@ -22,7 +22,7 @@ typedef struct _coro_global
 ...
 } coro_global;
 ```
-该变量是用于存储协程的基本信息如开启的协程数量。此外，swoole_coroutine.c中还定义了一个很重要的宏叫做SWCC，用于保存当前协程的详细信息，我们知道Swoole为每个协程都分配了空间，用于保存协程切换时的状态信息。进行协程切换时会自动保存Zend VM的内存状态（主要是EG全局内存和vm stack）。那么所谓的状态信息就是保存于SWCC这个宏当中，回调函数执行完后释放。
+该变量是用于存储协程的基本信息如开启的协程数量。此外，swoole_coroutine.c中还定义了一个很重要的宏叫做SWCC，用于保存当前协程的详细信息，我们知道Swoole为每个协程都分配了空间，用于保存协程切换时的状态信息，进行协程切换时会自动保存Zend VM的内存状态。那么所谓的状态信息就是保存于SWCC这个宏当中，回调函数执行完后释放。
 
 接下来我们介绍swoole协程中几个比较重要的动作。
 
