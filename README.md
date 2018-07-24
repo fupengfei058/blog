@@ -43,14 +43,16 @@
 * [分布式系统事务一致性解决方案](https://github.com/fupengfei058/article-collection/blob/master/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%BA%8B%E5%8A%A1%E4%B8%80%E8%87%B4%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 * [分库分表的几种常见形式以及可能遇到的难](https://github.com/fupengfei058/article-collection/blob/master/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%BD%A2%E5%BC%8F%E4%BB%A5%E5%8F%8A%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE.md)
 
-### 其他
-* [知识点整理——操作系统](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
-* [知识点整理——计算机网络](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
-* [从全球导航到输入法：谈谈动态规划](https://github.com/fupengfei058/article-collection/blob/master/%E4%BB%8E%E5%85%A8%E7%90%83%E5%AF%BC%E8%88%AA%E5%88%B0%E8%BE%93%E5%85%A5%E6%B3%95%EF%BC%9A%E8%B0%88%E8%B0%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
+### 计算机系统
 * [Linux后台作业](https://github.com/fupengfei058/article-collection/blob/master/Linux%E5%90%8E%E5%8F%B0%E4%BD%9C%E4%B8%9A.md)
 * [浮点数](https://github.com/fupengfei058/article-collection/blob/master/%E6%B5%AE%E7%82%B9%E6%95%B0.md)
 * [段错误——关于计算机内存布局](https://github.com/fupengfei058/article-collection/blob/master/%E6%AE%B5%E9%94%99%E8%AF%AF%E2%80%94%E2%80%94%E5%85%B3%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.md)
 * [Linux系统内核空间与用户空间通信的实现与分析](https://github.com/fupengfei058/article-collection/blob/master/Linux%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E4%B8%8E%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4%E9%80%9A%E4%BF%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%B8%8E%E5%88%86%E6%9E%90.md)
+
+### 其他
+* [知识点整理——操作系统](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
+* [知识点整理——计算机网络](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
+* [从全球导航到输入法：谈谈动态规划](https://github.com/fupengfei058/article-collection/blob/master/%E4%BB%8E%E5%85%A8%E7%90%83%E5%AF%BC%E8%88%AA%E5%88%B0%E8%BE%93%E5%85%A5%E6%B3%95%EF%BC%9A%E8%B0%88%E8%B0%88%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
 * [用Strace诊断服务器问题](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8Strace%E8%AF%8A%E6%96%AD%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98.md)
 * [GDB调试core文件详解](https://github.com/fupengfei058/article-collection/blob/master/GDB%E8%B0%83%E8%AF%95core%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.md)
 * [memcache与redis原理比较](https://github.com/fupengfei058/article-collection/blob/master/memcache%E4%B8%8Eredis%E5%8E%9F%E7%90%86%E6%AF%94%E8%BE%83.md)
