@@ -18,6 +18,7 @@
 * [PHP的socket相关函数整理](https://github.com/fupengfei058/article-collection/blob/master/PHP%E7%9A%84socket%E7%9B%B8%E5%85%B3%E5%87%BD%E6%95%B0%E6%95%B4%E7%90%86.md)
 * [C语言malloc函数原理](https://github.com/fupengfei058/article-collection/blob/master/C%E8%AF%AD%E8%A8%80malloc%E5%87%BD%E6%95%B0%E5%8E%9F%E7%90%86.md)
 * [php中mt_rand()随机数安全的深入理解](https://github.com/fupengfei058/article-collection/blob/master/php%E4%B8%ADmt_rand()%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%AE%89%E5%85%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3.md)
+* [mmap和madvise的使用](https://github.com/fupengfei058/article-collection/blob/master/mmap%E5%92%8Cmadvise%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 
 ### 算法&网络
 * [用memoization优化递归算法](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
