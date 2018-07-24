@@ -48,6 +48,7 @@
 * [浮点数](https://github.com/fupengfei058/article-collection/blob/master/%E6%B5%AE%E7%82%B9%E6%95%B0.md)
 * [段错误——关于计算机内存布局](https://github.com/fupengfei058/article-collection/blob/master/%E6%AE%B5%E9%94%99%E8%AF%AF%E2%80%94%E2%80%94%E5%85%B3%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80.md)
 * [Linux系统内核空间与用户空间通信的实现与分析](https://github.com/fupengfei058/article-collection/blob/master/Linux%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%A9%BA%E9%97%B4%E4%B8%8E%E7%94%A8%E6%88%B7%E7%A9%BA%E9%97%B4%E9%80%9A%E4%BF%A1%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%B8%8E%E5%88%86%E6%9E%90.md)
+* [VFS文件系统结构分析](https://github.com/fupengfei058/article-collection/blob/master/VFS%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.md)
 
 ### 其他
 * [知识点整理——操作系统](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
