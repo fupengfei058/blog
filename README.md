@@ -59,3 +59,4 @@
 * [用Strace诊断服务器问题](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8Strace%E8%AF%8A%E6%96%AD%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%AE%E9%A2%98.md)
 * [GDB调试core文件详解](https://github.com/fupengfei058/article-collection/blob/master/GDB%E8%B0%83%E8%AF%95core%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3.md)
 * [memcache与redis原理比较](https://github.com/fupengfei058/article-collection/blob/master/memcache%E4%B8%8Eredis%E5%8E%9F%E7%90%86%E6%AF%94%E8%BE%83.md)
+* [nginx如何解决惊群效应](https://github.com/fupengfei058/article-collection/blob/master/nginx%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%83%8A%E7%BE%A4%E6%95%88%E5%BA%94.md)
