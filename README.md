@@ -52,6 +52,9 @@
 * [VFS文件系统结构分析](https://github.com/fupengfei058/article-collection/blob/master/VFS%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.md)
 * [linux的IO调度算法和回写机制](https://github.com/fupengfei058/article-collection/blob/master/linux%E7%9A%84IO%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E5%92%8C%E5%9B%9E%E5%86%99%E6%9C%BA%E5%88%B6.md)
 * [进程和线程的调度](https://github.com/fupengfei058/article-collection/blob/master/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E8%B0%83%E5%BA%A6.md)
+* [存储模型和虚拟内存](https://github.com/fupengfei058/article-collection/blob/master/%E5%AD%98%E5%82%A8%E6%A8%A1%E5%9E%8B%E5%92%8C%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98.md)
+* [页面置换算法](https://github.com/fupengfei058/article-collection/blob/master/%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95.md)
+* [死锁](https://github.com/fupengfei058/article-collection/blob/master/%E6%AD%BB%E9%94%81.md)
 
 ### 其他
 * [知识点整理——操作系统](https://github.com/fupengfei058/article-collection/blob/master/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86%E2%80%94%E2%80%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.md)
