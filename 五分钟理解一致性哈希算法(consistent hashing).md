@@ -78,8 +78,9 @@ Hash(“192.168.1.100”);
 Hash(“192.168.1.100#1”); // NODE1-1
 Hash(“192.168.1.100#2”); // NODE1-2
 ```
-参考：
-[1] http://blog.huanghao.me/?p=14
+参考：<br>
+[1] http://blog.huanghao.me/?p=14 <br>
+**[2] http://www.zsythink.net/archives/1182**
 
 链接：
 http://blog.csdn.net/cywosp/article/details/23397179#0-tsina-1-38420-397232819ff9a47a7b7e80a40613cfe1
