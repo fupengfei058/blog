@@ -34,7 +34,7 @@ Hashtable的概念实际上非常简单：字符串的键先会被传递给一�
 另外通常情况下，Hashtable并非是显式排序的：最终底层数组中保存的元素的顺序是跟hash函数相关的，并且这个顺序一般都是随机的。这个行为显然跟PHP数组的语义不符：PHP的数组的迭代顺序跟数组中元素的插入顺序完全一致。这也意味着，PHP中的Hashtable的实现必须有一种额外的机制记住数组中元素的插入顺序。
 
 #### 老的Hashtable的实现方式
-在此我只会大概介绍一下老的hashtable的实现方式，如果你想要更进一步的了解，可以参见[PHP内部机制这本书的hashtable](http://www.phpinternalsbook.com/hashtables/basic_structure.html)这一章。下面这张图高度概括了PHP5中的hanshtable：
+在此我只会大概介绍一下老的hashtable的实现方式，如果你想要更进一步的了解，可以参见[PHP内部机制这本书的hashtable](http://www.phpinternalsbook.com/hashtables/basic_structure.html)这一章。下面这张图高度概括了PHP5中的hashtable：
 
 ![github](https://github.com/fupengfei058/article-collection/raw/master/doc/g1.png)
 
