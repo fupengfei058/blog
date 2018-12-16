@@ -20,6 +20,7 @@
 * [php中mt_rand()随机数安全的深入理解](https://github.com/fupengfei058/article-collection/blob/master/php%E4%B8%ADmt_rand()%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%AE%89%E5%85%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3.md)
 * [mmap和madvise的使用](https://github.com/fupengfei058/article-collection/blob/master/mmap%E5%92%8Cmadvise%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 * [php函数的实现原理及性能分析](https://github.com/fupengfei058/article-collection/blob/master/php%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E5%8F%8A%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90.md)
+* [使用生成器优化foreach](https://github.com/fupengfei058/article-collection/blob/master/%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E5%99%A8%E4%BC%98%E5%8C%96foreach.md)
 
 ### 算法&网络
 * [用memoization优化递归算法](https://github.com/fupengfei058/article-collection/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
