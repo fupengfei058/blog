@@ -38,6 +38,7 @@
 * [B+/-Tree原理及mysql的索引分析](https://github.com/fupengfei058/article-collection/blob/master/B-Tree%E5%8E%9F%E7%90%86%E5%8F%8Amysql%E7%9A%84%E7%B4%A2%E5%BC%95%E5%88%86%E6%9E%90.md)
 * [使用Phalcon+PHP-FPM构建PHP基于多进程的数据库连接池](https://github.com/fupengfei058/article-collection/blob/master/%E4%BD%BF%E7%94%A8Phalcon+PHP-FPM%E6%9E%84%E5%BB%BAPHP%E5%9F%BA%E4%BA%8E%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0.md)
 * [mysql INSERT ... ON DUPLICATE KEY UPDATE语句](https://github.com/fupengfei058/article-collection/blob/master/mysql%20INSERT%20...%20ON%20DUPLICATE%20KEY%20UPDATE%E8%AF%AD%E5%8F%A5.md)
+* [MySQL 重要参数 innodb_flush_log_at_trx_commit 和 sync_binlog](https://github.com/fupengfei058/article-collection/blob/master/MySQL%20%E9%87%8D%E8%A6%81%E5%8F%82%E6%95%B0%20innodb_flush_log_at_trx_commit%20%E5%92%8C%20sync_binlog.md)
 
 ### 架构&设计
 * [五分钟理解一致性哈希算法(consistent hashing)](https://github.com/fupengfei058/article-collection/blob/master/%E4%BA%94%E5%88%86%E9%92%9F%E7%90%86%E8%A7%A3%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95(consistent%20hashing).md)
