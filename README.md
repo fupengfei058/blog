@@ -31,6 +31,7 @@
 * [TIME_WAIT状态存在的原因](https://github.com/fupengfei058/blog/blob/master/TIME_WAIT%E7%8A%B6%E6%80%81%E5%AD%98%E5%9C%A8%E7%9A%84%E5%8E%9F%E5%9B%A0.md)
 * [TCP序列号回绕与解决](https://github.com/fupengfei058/blog/blob/master/TCP%E5%BA%8F%E5%88%97%E5%8F%B7%E5%9B%9E%E7%BB%95%E4%B8%8E%E8%A7%A3%E5%86%B3.md)
 * [TCP-fastopen(TFO)](https://github.com/fupengfei058/blog/blob/master/TCP-fastopen(TFO).md)
+* [tcp粘包问题](https://github.com/fupengfei058/blog/blob/master/tcp%E7%B2%98%E5%8C%85%E9%97%AE%E9%A2%98.md)
 
 ### 服务器&数据库
 * [fastcgi与php-fpm的关系](https://github.com/fupengfei058/blog/blob/master/fastcgi%E4%B8%8Ephp-fpm%E7%9A%84%E5%85%B3%E7%B3%BB.md)
