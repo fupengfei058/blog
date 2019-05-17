@@ -75,3 +75,4 @@
 * [nginx如何解决惊群效应](https://github.com/fupengfei058/blog/blob/master/nginx%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%83%8A%E7%BE%A4%E6%95%88%E5%BA%94.md)
 * [epoll内核源码详解](https://github.com/fupengfei058/blog/blob/master/epoll%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md)
 * [Elasticsearch基础介绍及索引原理分析](https://github.com/fupengfei058/blog/blob/master/Elasticsearch%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D%E5%8F%8A%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.md)
+* [Redis中的事件循环](https://github.com/fupengfei058/blog/blob/master/Redis%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.md)
