@@ -54,6 +54,7 @@
 * [分布式系统事务一致性解决方案](https://github.com/fupengfei058/blog/blob/master/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%BA%8B%E5%8A%A1%E4%B8%80%E8%87%B4%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 * [分库分表的几种常见形式以及可能遇到的难](https://github.com/fupengfei058/blog/blob/master/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%BD%A2%E5%BC%8F%E4%BB%A5%E5%8F%8A%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE.md)
 * [Redis分布式锁解读](https://github.com/fupengfei058/blog/blob/master/Redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E8%A7%A3%E8%AF%BB.md)
+* [简述四层和七层负载均衡的特点及Haproxy、nginx与LVS之间的对比](https://github.com/fupengfei058/blog/blob/master/%E7%AE%80%E8%BF%B0%E5%9B%9B%E5%B1%82%E5%92%8C%E4%B8%83%E5%B1%82%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E7%89%B9%E7%82%B9%E5%8F%8AHaproxy%E3%80%81nginx%E4%B8%8ELVS%E4%B9%8B%E9%97%B4%E7%9A%84%E5%AF%B9%E6%AF%94.md)
 
 ### 计算机系统
 * [Linux后台作业](https://github.com/fupengfei058/blog/blob/master/Linux%E5%90%8E%E5%8F%B0%E4%BD%9C%E4%B8%9A.md)
