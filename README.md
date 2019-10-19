@@ -24,6 +24,7 @@
 * [PHP发送HTTP请求的几种方式](https://github.com/fupengfei058/blog/blob/master/PHP%E5%8F%91%E9%80%81HTTP%E8%AF%B7%E6%B1%82%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F.md)
 * [swoole4协程原理](https://github.com/fupengfei058/blog/blob/master/swoole4%E5%8D%8F%E7%A8%8B%E5%8E%9F%E7%90%86.md)
 * [PHP中$_POST揭秘](https://github.com/fupengfei058/blog/blob/master/PHP%E4%B8%AD%24_POST%E6%8F%AD%E7%A7%98.md)
+* [goroutine背后的系统知识](https://github.com/fupengfei058/blog/blob/master/goroutine%E8%83%8C%E5%90%8E%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86.md)
 
 ### 算法&网络
 * [用memoization优化递归算法](https://github.com/fupengfei058/blog/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
