@@ -45,7 +45,6 @@
 * [使用Phalcon+PHP-FPM构建PHP基于多进程的数据库连接池](https://github.com/fupengfei058/blog/blob/master/%E4%BD%BF%E7%94%A8Phalcon+PHP-FPM%E6%9E%84%E5%BB%BAPHP%E5%9F%BA%E4%BA%8E%E5%A4%9A%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0.md)
 * [mysql INSERT ... ON DUPLICATE KEY UPDATE语句](https://github.com/fupengfei058/blog/blob/master/mysql%20INSERT%20...%20ON%20DUPLICATE%20KEY%20UPDATE%E8%AF%AD%E5%8F%A5.md)
 * [MySQL 重要参数 innodb_flush_log_at_trx_commit 和 sync_binlog](https://github.com/fupengfei058/blog/blob/master/MySQL%20%E9%87%8D%E8%A6%81%E5%8F%82%E6%95%B0%20innodb_flush_log_at_trx_commit%20%E5%92%8C%20sync_binlog.md)
-* [关于redis持久化](https://github.com/fupengfei058/blog/blob/master/%E5%85%B3%E4%BA%8Eredis%E6%8C%81%E4%B9%85%E5%8C%96.md)
 * [Innodb事务ACID实现原理](https://github.com/fupengfei058/blog/blob/master/Innodb%E4%BA%8B%E5%8A%A1ACID%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
 
 ### 架构&设计
@@ -56,7 +55,6 @@
 * [从哈希到布隆过滤器](https://github.com/fupengfei058/blog/blob/master/%E4%BB%8E%E5%93%88%E5%B8%8C%E5%88%B0%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8.md)
 * [分布式系统事务一致性解决方案](https://github.com/fupengfei058/blog/blob/master/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%BA%8B%E5%8A%A1%E4%B8%80%E8%87%B4%E6%80%A7%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 * [分库分表的几种常见形式以及可能遇到的难](https://github.com/fupengfei058/blog/blob/master/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E5%BD%A2%E5%BC%8F%E4%BB%A5%E5%8F%8A%E5%8F%AF%E8%83%BD%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE.md)
-* [Redis分布式锁解读](https://github.com/fupengfei058/blog/blob/master/Redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E8%A7%A3%E8%AF%BB.md)
 * [简述四层和七层负载均衡的特点及Haproxy、nginx与LVS之间的对比](https://github.com/fupengfei058/blog/blob/master/%E7%AE%80%E8%BF%B0%E5%9B%9B%E5%B1%82%E5%92%8C%E4%B8%83%E5%B1%82%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%9A%84%E7%89%B9%E7%82%B9%E5%8F%8AHaproxy%E3%80%81nginx%E4%B8%8ELVS%E4%B9%8B%E9%97%B4%E7%9A%84%E5%AF%B9%E6%AF%94.md)
 
 ### 计算机系统
@@ -83,4 +81,6 @@
 * [epoll内核源码详解](https://github.com/fupengfei058/blog/blob/master/epoll%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81%E8%AF%A6%E8%A7%A3.md)
 * [Elasticsearch基础介绍及索引原理分析](https://github.com/fupengfei058/blog/blob/master/Elasticsearch%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D%E5%8F%8A%E7%B4%A2%E5%BC%95%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.md)
 * [Redis中的事件循环](https://github.com/fupengfei058/blog/blob/master/Redis%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF.md)
+* [关于Redis持久化](https://github.com/fupengfei058/blog/blob/master/%E5%85%B3%E4%BA%8Eredis%E6%8C%81%E4%B9%85%E5%8C%96.md)
+* [Redis分布式锁解读](https://github.com/fupengfei058/blog/blob/master/Redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E8%A7%A3%E8%AF%BB.md)
 * [日志采集中的关键技术分析](https://github.com/fupengfei058/blog/blob/master/%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90.md)
