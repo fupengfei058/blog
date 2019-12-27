@@ -46,6 +46,7 @@
 * [mysql INSERT ... ON DUPLICATE KEY UPDATE语句](https://github.com/fupengfei058/blog/blob/master/mysql%20INSERT%20...%20ON%20DUPLICATE%20KEY%20UPDATE%E8%AF%AD%E5%8F%A5.md)
 * [MySQL 重要参数 innodb_flush_log_at_trx_commit 和 sync_binlog](https://github.com/fupengfei058/blog/blob/master/MySQL%20%E9%87%8D%E8%A6%81%E5%8F%82%E6%95%B0%20innodb_flush_log_at_trx_commit%20%E5%92%8C%20sync_binlog.md)
 * [Innodb事务ACID实现原理](https://github.com/fupengfei058/blog/blob/master/Innodb%E4%BA%8B%E5%8A%A1ACID%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86.md)
+* [mysql行级锁解析](https://github.com/fupengfei058/blog/blob/master/mysql%E8%A1%8C%E7%BA%A7%E9%94%81%E8%A7%A3%E6%9E%90.md)
 
 ### 架构&设计
 * [五分钟理解一致性哈希算法(consistent hashing)](https://github.com/fupengfei058/blog/blob/master/%E4%BA%94%E5%88%86%E9%92%9F%E7%90%86%E8%A7%A3%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95(consistent%20hashing).md)
