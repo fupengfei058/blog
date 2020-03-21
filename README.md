@@ -26,6 +26,7 @@
 * [PHP中$_POST揭秘](https://github.com/fupengfei058/blog/blob/master/PHP%E4%B8%AD%24_POST%E6%8F%AD%E7%A7%98.md)
 * [goroutine背后的系统知识](https://github.com/fupengfei058/blog/blob/master/goroutine%E8%83%8C%E5%90%8E%E7%9A%84%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86.md)
 * [goroutine并发控制与通信](https://github.com/fupengfei058/blog/blob/master/goroutine%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6%E4%B8%8E%E9%80%9A%E4%BF%A1.md)
+* [golang gc 优化思路以及实例分析](https://github.com/fupengfei058/blog/blob/master/golang%20gc%20%E4%BC%98%E5%8C%96%E6%80%9D%E8%B7%AF%E4%BB%A5%E5%8F%8A%E5%AE%9E%E4%BE%8B%E5%88%86%E6%9E%90.md)
 
 ### 算法&网络
 * [用memoization优化递归算法](https://github.com/fupengfei058/blog/blob/master/%E7%94%A8memoization%E4%BC%98%E5%8C%96%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95.md)
