@@ -87,3 +87,4 @@
 * [关于Redis持久化](https://github.com/fupengfei058/blog/blob/master/%E5%85%B3%E4%BA%8Eredis%E6%8C%81%E4%B9%85%E5%8C%96.md)
 * [Redis分布式锁解读](https://github.com/fupengfei058/blog/blob/master/Redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E8%A7%A3%E8%AF%BB.md)
 * [日志采集中的关键技术分析](https://github.com/fupengfei058/blog/blob/master/%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90.md)
+* [黑产对抗](https://github.com/fupengfei058/blog/blob/master/%E9%BB%91%E4%BA%A7%E5%AF%B9%E6%8A%97.md)
