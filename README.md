@@ -90,3 +90,4 @@
 * [日志采集中的关键技术分析](https://github.com/fupengfei058/blog/blob/master/%E6%97%A5%E5%BF%97%E9%87%87%E9%9B%86%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90.md)
 * [黑产对抗](https://github.com/fupengfei058/blog/blob/master/%E9%BB%91%E4%BA%A7%E5%AF%B9%E6%8A%97.md)
 * [从游戏自动化脚本开发到黑灰产防御](https://github.com/fupengfei058/blog/blob/master/%E4%BB%8E%E6%B8%B8%E6%88%8F%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91%E5%88%B0%E9%BB%91%E7%81%B0%E4%BA%A7%E9%98%B2%E5%BE%A1.md)
+* [ChatGPT流式输出原理揭秘](https://github.com/fupengfei058/blog/blob/master/ChatGPT%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA%E5%8E%9F%E7%90%86%E6%8F%AD%E7%A7%98.md)
